@@ -158,7 +158,7 @@ Future.all([Future.value(1), Future.value(2), Future.value(3)])
 ### Future.concurrent(futureGetters, options)
 
 ```ts
-all(futures: Array<() => Future<A>>, {concurrency: number}): Future<Array<A>>
+concurrent(futures: Array<() => Future<A>>, {concurrency: number}): Future<Array<A>>
 ```
 
 Like `Future.all` with a max concurrency, and in order to control the flow, provided with functions returning futures.
